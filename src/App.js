@@ -1,9 +1,8 @@
 // src/App.js
 import React from 'react';
-import ChartComponent from './components/chart';
+import ChartComponent from './components/chart'; // Correct import path
 
 const mockData = {
-  // Add your dataset here
   labels: ['January', 'February', 'March', 'April', 'May'],
   datasets: [
     {
