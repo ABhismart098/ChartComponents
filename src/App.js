@@ -1,6 +1,6 @@
-// src/App.js
+
 import React from 'react';
-import ChartComponent from './components/chart'; // Correct import path
+import ChartComponent from './components/chart'; 
 
 const mockData = {
   labels: ['January', 'February', 'March', 'April', 'May'],
@@ -17,10 +17,10 @@ const mockData = {
 
 const customizationOptions = {
   xAxis: {
-    // Add customization options for x-axis
+   
   },
   yAxis: {
-    // Add customization options for y-axis
+   
   },
 };
 
@@ -29,7 +29,7 @@ function App() {
     <div className="App">
       <h1>Data Visualization Chart</h1>
       <ChartComponent data={mockData} chartType="bar" customizationOptions={customizationOptions} />
-      {/* Add UI controls to toggle between chart types and customize options */}
+      
     </div>
   );
 }
