@@ -34,7 +34,7 @@ const ChartComponent = ({ chartType, customizationOptions }) => {
       setData(newData);
     });
 
-    // Generate and set random data for demonstration
+  
     const generateRandomData = () => {
       const randomLabels = Array.from({ length: 5 }, (_, i) => `Label ${i + 1}`);
       const randomData = randomLabels.map(() => Math.floor(Math.random() * 100));
@@ -52,10 +52,10 @@ const ChartComponent = ({ chartType, customizationOptions }) => {
       });
     };
 
-    // Set initial random data
+   
     generateRandomData();
 
-    // Intervals for updating random data (you can adjust the interval as needed)
+
     const intervalId = setInterval(() => {
       generateRandomData();
     }, 5000);
